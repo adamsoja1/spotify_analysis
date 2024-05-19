@@ -1,6 +1,5 @@
-# Spotify Analysis Docker Container
-
-This Dockerfile enables you to create a Docker container tailored for Spotify data analysis. The container includes all the necessary dependencies for conducting Spotify data analysis tasks.
+# Spotify Analysis 
+Spotify data analysis - https://www.kaggle.com/datasets/meeraajayakumar/spotify-user-behavior-dataset
 
 ## Build Instructions
 
@@ -22,7 +21,6 @@ docker build . -t spotify_analysis
 ```bash
 docker run --rm -it --ipc=host -p 8888:8888 -v .:/home spotify_analysis
 ```
-
 
 - `--rm`: This flag removes the container automatically after it exits. This is useful for temporary containers that you don't want to leave behind after they've completed their task.
 
